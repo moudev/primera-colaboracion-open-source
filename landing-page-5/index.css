@@ -1,0 +1,166 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #01A6AC;
+  --bg-secondary: #FFFFFF;
+  --text-color-primary: #01A6AC;
+  --text-color-secondary: #FFFFFF;
+  --text-w-light: 300;
+  --text-w-bold: 500;
+  --text-size-lg: 6rem;
+  --text-size-sm: 1rem;
+  --text-size-xs: 0.875rem;
+}
+
+/* Utils */
+.--light {
+  font-weight: var(--text-w-light);
+}
+
+.--bold {
+  font-weight: var(--text-w-bold);
+}
+
+.--big {
+  font-size: var(--text-size-lg);
+}
+
+.--small {
+  font-size: var(--text-size-sm);
+}
+
+body {
+  background-color: var(--bg-secondary);
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  /* https://cssgradient.io/ */
+  background: var(--bg-primary);
+  background: linear-gradient(0deg, var(--bg-primary) 0%, var(--bg-secondary) 60%, var(--bg-secondary) 100%);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (min-width:640px) {
+ .container {
+  max-width:640px
+ }
+}
+
+@media (min-width:768px) {
+ .container {
+  max-width:768px
+ }
+}
+
+@media (min-width:1024px) {
+ .container {
+  max-width:1024px
+ }
+}
+
+@media (min-width:1280px) {
+ .container {
+  max-width:1280px
+ }
+}
+
+.navbar {
+  display: flex;
+}
+
+.menu {
+  margin: 2.25rem 0 0 0;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-radius: 30px;
+  background-color: var(--bg-secondary);
+  color: var(--text-color-primary);
+  font-size: var(--text-size-sm);
+}
+
+.menu__option {
+  padding: 0.75rem 1rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-weight: var(--text-w-bold);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content__section__separator {
+  height: 5px;
+  width: 30%;
+  background: var(--bg-primary);
+  margin: 4.5rem 0;
+}
+
+.content__section-presentation__mixed {
+  position: relative;
+  color: var(--text-color-primary);
+}
+
+.content__section-skills {
+  display: flex;
+}
+
+.section-skills__skill__container:nth-child(2) {
+  padding-top: 4rem;
+  margin: 0 5rem;
+}
+
+.content__section-skills__skill {
+  border: 1px solid var(--bg-primary);
+  border-radius: 10px;
+  padding: 1.2rem 1rem;
+  color: var(--text-color-primary);
+}
+
+.section-skills__skill__title {
+  margin-bottom: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer__section-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.25rem;
+}
+
+.footer__section-social__item {
+  height: 2.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.footer__section-social__item path{
+  fill: var(--bg-secondary);
+}
