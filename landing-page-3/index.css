@@ -1,0 +1,153 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #FFFFFF;
+  --text-color-primary: #000000;
+  --text-color-secondary: #FFFFFF;
+  --text-w-light: 300;
+  --text-w-bold: 500;
+  --text-size-lg: 6rem;
+  --text-size-sm: 1rem;
+  --text-size-xs: 0.875rem;
+}
+
+/* Utils */
+.--light {
+  font-weight: var(--text-w-light);
+}
+
+.--bold {
+  font-weight: var(--text-w-bold);
+}
+
+.--big {
+  font-size: var(--text-size-lg);
+}
+
+.--small {
+  font-size: var(--text-size-sm);
+}
+
+.--mayus {
+  text-transform: uppercase;
+}
+
+body {
+  background-color: var(--bg-secondary);
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+@media (min-width:640px) {
+ .container {
+  max-width:640px
+ }
+}
+
+@media (min-width:768px) {
+ .container {
+  max-width:768px
+ }
+}
+
+@media (min-width:1024px) {
+ .container {
+  max-width:1024px
+ }
+}
+
+@media (min-width:1280px) {
+ .container {
+  max-width:1280px
+ }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+}
+
+.content__section-menu {
+  transform: rotate(-90deg) translateX(-60%);
+  transform-origin: left top;
+  position: absolute;
+  left: 0;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  border-radius: 30px;
+  color: var(--text-color-primary);
+  font-size: var(--text-size-xs);
+}
+
+.menu__option {
+  margin: 0 0.5rem;
+  cursor: pointer;
+  font-weight: var(--text-w-bold);
+}
+
+.content__section-presentation {
+  width: 100%;
+}
+
+.content__section-presentation__mixed {
+  position: relative;
+}
+
+.content__section-gallery {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.content__section-gallery__profile {
+  width: 25%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.footer__section-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.25rem; 
+}
+
+.footer__section-social__item {
+  height: 2.5rem;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.footer__section-social__item path{
+  fill: var(--bg-primary);
+}
