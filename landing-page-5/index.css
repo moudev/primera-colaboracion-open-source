@@ -153,6 +153,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__section-social {
