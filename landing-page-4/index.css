@@ -136,6 +136,7 @@ body {
   font-size: var(--text-size-sm);
   color: var(--text-color-primary);
   cursor: pointer;
+  background-color: var(--bg-secondary)
 }
 
 .content__section-presentation__button svg {
@@ -209,5 +210,5 @@ body {
 }
 
 .footer__section-social__item path{
-  fill: #000000;
+  fill: var(--bg-secondary)
 }
