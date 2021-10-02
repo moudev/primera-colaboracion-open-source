@@ -186,7 +186,7 @@ Para poder sincronizar los últimos cambios del repositorio original con la copi
 Teniendo en cuenta que ya se tiene el enlace del repositorio original, se procede a agregarlo desde la raíz de la carpeta que contiene a todas las landing pages, con el comando;
 
 ```shell
-git remote add upstream https://URL-REPOSITORIO-ORIGINAL
+git remote add upstream https://github.com/moudev/primera-colaboracion-open-source
 ```
 
 Luego de haber agregado el repositorio original, se necesita hacer una petición de estos cambios, pero estos cambios en este momento aún no serán agregados en el historial de modificaciones de la computadora, porque se necesita otro paso de confirmación, con `fetch` es un estilo de petición para dejarlos a un lado mientras tanto.
