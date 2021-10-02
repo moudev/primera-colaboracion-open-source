@@ -93,6 +93,8 @@ Una vez el paso de clonar el repositorio haya terminado, se tiene que entrar en 
 
 ### 3- Realizar modificaciones
 
+Si el editor de texto que utilizas es [Visual Studio Code](https://code.visualstudio.com/), te recomiendo utilizar la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) para poder visualizar los cambios de una manera más fácil porque se actualiza de forma automática.
+
 Posterior de entrar en la carpeta y haber elegido una landing page que modificar, se tiene que abrir el editor de texto de preferencia y completar los `issues` que la landing page tiene asignados.
 
 En el caso de la siguiente imagen, se abrió la carpeta de la landing page 1 y, se modificó el nombre de una de las opciones del menú.
@@ -186,7 +188,7 @@ Para poder sincronizar los últimos cambios del repositorio original con la copi
 Teniendo en cuenta que ya se tiene el enlace del repositorio original, se procede a agregarlo desde la raíz de la carpeta que contiene a todas las landing pages, con el comando;
 
 ```shell
-git remote add upstream https://URL-REPOSITORIO-ORIGINAL
+git remote add upstream https://github.com/moudev/primera-colaboracion-open-source
 ```
 
 Luego de haber agregado el repositorio original, se necesita hacer una petición de estos cambios, pero estos cambios en este momento aún no serán agregados en el historial de modificaciones de la computadora, porque se necesita otro paso de confirmación, con `fetch` es un estilo de petición para dejarlos a un lado mientras tanto.
