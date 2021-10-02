@@ -93,6 +93,8 @@ Una vez el paso de clonar el repositorio haya terminado, se tiene que entrar en 
 
 ### 3- Realizar modificaciones
 
+Si el editor de texto que utilizas es [Visual Studio Code](https://code.visualstudio.com/), te recomiendo utilizar la extensión [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) para poder visualizar los cambios de una manera más fácil porque se actualiza de forma automática.
+
 Posterior de entrar en la carpeta y haber elegido una landing page que modificar, se tiene que abrir el editor de texto de preferencia y completar los `issues` que la landing page tiene asignados.
 
 En el caso de la siguiente imagen, se abrió la carpeta de la landing page 1 y, se modificó el nombre de una de las opciones del menú.
