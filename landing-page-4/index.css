@@ -112,13 +112,14 @@ body {
 .content__section-presentation{
   background: var(--bg-primary);
   color: var(--text-color-secondary);
+  margin-left: -7%;
 }
 
 .content__section-presentation__mixed {
   position: relative;
 }
 
-.content__section-presentation__mixed::after {
+/* .content__section-presentation__mixed::after {
   content: "";
   position: absolute;
   height: 1rem;
@@ -126,7 +127,7 @@ body {
   width: 100%;
   bottom: 1rem;
   z-index: -1;
-}
+} */
 
 .content__section-presentation__button {
   border: none;
@@ -136,6 +137,7 @@ body {
   font-size: var(--text-size-sm);
   color: var(--text-color-primary);
   cursor: pointer;
+  background-color: var(--bg-secondary);
 }
 
 .content__section-presentation__button svg {
@@ -164,35 +166,41 @@ body {
 }
 
 .section-gallery__card__text {
-  order: 1;
-  margin-right: 2.5rem;
-  text-align: left;
+  order: 2;
+  margin-left: 7rem;
+  text-align: right;
   color: var(--text-color-primary);
 }
 
 .content__section-gallery__card.--right >
 .section-gallery__card__text  {
-  text-align: right;
-  margin-right: 0;
-  margin-left: 2.5rem;
+  text-align: left;
+  margin-top: 10rem;
+  margin-right: 7rem;
+  margin-left: 0.5rem;
   order: 2;
 }
 
 .section-gallery__card__profile {
-  width: 70%;
-  border: 5px solid var(--bg-primary);
-  order: 2;
+  width: 40%;
+  height: 40%;
+  border-radius: 300px;
+  border: 15px solid var(--bg-primary);
+  order: 1;
 }
 
 .content__section-gallery__card.--right >
 .section-gallery__card__profile  {
-  order: 1;
+  order: 2;
+  transform: scaleX(-1);
+  margin-top: 10rem;
 }
 
 .footer {
   display: flex;
   justify-content: start;
   align-items: center;
+  margin-top: -5%;
 }
 
 .footer__section-social {
@@ -200,6 +208,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 2.25rem; 
+  margin-left: -7%;
 }
 
 .footer__section-social__item {
@@ -209,5 +218,5 @@ body {
 }
 
 .footer__section-social__item path{
-  fill: #000000;
+  fill: #ECC3CE;
 }

@@ -21,6 +21,9 @@
 /* Utils */
 .--light {
   font-weight: var(--text-w-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .--bold {
@@ -110,6 +113,11 @@ body {
   margin: 0 0.5rem;
   cursor: pointer;
   font-weight: var(--text-w-bold);
+  text-decoration: underline;
+}
+
+.menu__option__text1 {
+  color: #3ED182;
 }
 
 .content__section-presentation {
@@ -118,6 +126,9 @@ body {
 
 .content__section-presentation__mixed {
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content__section-gallery {
@@ -128,11 +139,14 @@ body {
 
 .content__section-gallery__profile {
   width: 25%;
+  height:25%;
+  border-radius:150px;
 }
 
 .footer {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 
 .footer__section-social {
