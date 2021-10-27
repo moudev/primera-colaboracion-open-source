@@ -84,6 +84,8 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
 }
 
 .menu {
@@ -109,15 +111,22 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 1%;
+  margin-top: 4%;
 }
 
 .content__section-presentation__mixed {
   position: relative;
 }
 
+
+
 .content__section-presentation__mixed::after {
   content: "";
-  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: -6%;
+  margin-bottom: 2%;
   height: 1rem;
   background: var(--bg-primary);
   width: 100%;
@@ -128,16 +137,19 @@ body {
 .content__section-gallery {
   display: flex;
   justify-content: flex-end;
+  margin-right: 2%;
 }
 
 .content__section-gallery__profile {
-  border-radius: 100%;
-  width: 85%;
+  border-radius: 150%;
+  width: 60%;
 }
 
 .footer {
   display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 6%;
 }
 
 .footer__section-social {
@@ -153,5 +165,5 @@ body {
 }
 
 .footer__section-social__item path{
-  fill: #000000;
+  fill: #6D6AE0;
 }
