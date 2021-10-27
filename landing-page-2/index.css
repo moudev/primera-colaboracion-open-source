@@ -84,6 +84,9 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2%;
+  margin-right: 2%;
 }
 
 .navbar__section-social {
@@ -100,7 +103,7 @@ body {
 }
 
 .navbar__section-social__item path{
-  fill: #000000;
+  fill: #3ED182;
 }
 
 .content {
@@ -111,6 +114,7 @@ body {
 .content__section-menu {
   flex: 1;
   height: 100%;
+  margin-left: 2%;
 }
 
 .menu {
@@ -132,12 +136,13 @@ body {
   cursor: pointer;
   border: 1px solid var(--bg-primary);
   width: 90%;
+  box-shadow: 2px 2px 2px #3ED182;
 }
 
 .menu__option:nth-child(even) {
   align-self: flex-end;
   margin: 6rem 0;
-  text-align: center;
+  text-align: left;
 }
 
 .menu__option__text {
@@ -159,10 +164,15 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-end;
+  margin-right: 1%;
 }
 
 .content__section-gallery {
   margin-top: 3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2%;
 }
 
 .content__section-gallery__profile {
