@@ -7,10 +7,10 @@
 }
 
 :root {
-  --bg-primary: #01A6AC;
-  --bg-secondary: #FFFFFF;
-  --text-color-primary: #01A6AC;
-  --text-color-secondary: #FFFFFF;
+  --bg-primary: #01a6ac;
+  --bg-secondary: #ffffff;
+  --text-color-primary: #01a6ac;
+  --text-color-secondary: #ffffff;
   --text-w-light: 300;
   --text-w-bold: 500;
   --text-size-lg: 6rem;
@@ -37,11 +37,16 @@
 
 body {
   background-color: var(--bg-secondary);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   height: 100vh;
   /* https://cssgradient.io/ */
   background: var(--bg-primary);
-  background: linear-gradient(0deg, var(--bg-primary) 0%, var(--bg-secondary) 60%, var(--bg-secondary) 100%);
+  background: linear-gradient(
+    0deg,
+    var(--bg-primary) 0%,
+    var(--bg-secondary) 60%,
+    var(--bg-secondary) 100%
+  );
 }
 
 .container {
@@ -57,32 +62,33 @@ body {
   height: 100%;
 }
 
-@media (min-width:640px) {
- .container {
-  max-width:640px
- }
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
 }
 
-@media (min-width:768px) {
- .container {
-  max-width:768px
- }
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
 }
 
-@media (min-width:1024px) {
- .container {
-  max-width:1024px
- }
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
 }
 
-@media (min-width:1280px) {
- .container {
-  max-width:1280px
- }
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
 .navbar {
   display: flex;
+  justify-content: flex-end;
 }
 
 .menu {
@@ -137,6 +143,7 @@ body {
   border-radius: 10px;
   padding: 1.2rem 1rem;
   color: var(--text-color-primary);
+  background-color: var(--bg-secondary);
 }
 
 .section-skills__skill__title {
@@ -146,6 +153,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__section-social {
@@ -161,6 +169,6 @@ body {
   cursor: pointer;
 }
 
-.footer__section-social__item path{
+.footer__section-social__item path {
   fill: var(--bg-secondary);
 }
