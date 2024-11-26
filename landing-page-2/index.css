@@ -84,6 +84,7 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: end;
 }
 
 .navbar__section-social {
@@ -100,7 +101,7 @@ body {
 }
 
 .navbar__section-social__item path{
-  fill: #000000;
+  fill: var(--bg-primary);
 }
 
 .content {
@@ -137,7 +138,7 @@ body {
 .menu__option:nth-child(even) {
   align-self: flex-end;
   margin: 6rem 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .menu__option__text {
@@ -159,6 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: end;
 }
 
 .content__section-gallery {

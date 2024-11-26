@@ -134,6 +134,7 @@ body {
   padding: 1rem 1.5rem;
   margin-top: 3rem;
   font-size: var(--text-size-sm);
+  background-color: var(--bg-secondary);
   color: var(--text-color-primary);
   cursor: pointer;
 }
@@ -160,7 +161,7 @@ body {
 }
 
 .content__section-gallery__card:nth-child(even) {
-  margin-top: 1rem;
+  margin-top: 6rem;
 }
 
 .section-gallery__card__text {
@@ -180,8 +181,13 @@ body {
 
 .section-gallery__card__profile {
   width: 70%;
-  border: 5px solid var(--bg-primary);
+  border: 14px solid var(--bg-primary);
   order: 2;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
 }
 
 .content__section-gallery__card.--right >
@@ -209,5 +215,5 @@ body {
 }
 
 .footer__section-social__item path{
-  fill: #000000;
+  fill: var(--bg-secondary);
 }

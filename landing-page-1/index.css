@@ -84,6 +84,7 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: end;
 }
 
 .menu {
@@ -138,6 +139,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__section-social {
@@ -153,5 +155,5 @@ body {
 }
 
 .footer__section-social__item path{
-  fill: #000000;
+  fill: var(--bg-primary);
 }

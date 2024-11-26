@@ -83,6 +83,7 @@ body {
 
 .navbar {
   display: flex;
+  justify-content: end;
 }
 
 .menu {
@@ -134,6 +135,7 @@ body {
 
 .content__section-skills__skill {
   border: 1px solid var(--bg-primary);
+  background-color: var(--bg-secondary);
   border-radius: 10px;
   padding: 1.2rem 1rem;
   color: var(--text-color-primary);
@@ -146,6 +148,7 @@ body {
 .footer {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__section-social {
